@@ -18,9 +18,11 @@
 		      <a class="navbar-brand" href="#">3조</a>
 		    </div>
 		    <ul class="nav navbar-nav">
-		      <li class="active"><a href="#">Home</a></li>
-		      <li><a href="#">Page 1</a></li>
+		      <li class="active"><a href="#">홈으로</a></li>
+		      <li><a href="#">리뷰쓰기</a></li>
 		      <li><a href="#">Page 2</a></li>
+		      <li><a href="#">Page 3</a></li>
+		      <li><a href="#">로그인/회원정보</a></li>
 		      <li><a href="#">Page 3</a></li>
 		    </ul>
 		  </div>
