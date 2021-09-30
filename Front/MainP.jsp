@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -91,7 +93,7 @@
 			    <div class="media-body">
 			      <h4 class="media-heading">식당1</h4>
 			      <p>별점1</p>
-			      <p>리뷰1</p>
+			      <p>리뷰제목1/작성자 아이디</p>
 			      <p>좋아요1</p>
 			    </div>
 			  </div>
@@ -103,7 +105,7 @@
 			    <div class="media-body">
 			      <h4 class="media-heading">식당2</h4>
 			      <p>별점2</p>
-			      <p>리뷰2</p>
+			      <p>리뷰제목2/작성자 아이디</p>
 			      <p>좋아요2</p>
 			    </div>
 			  </div>
@@ -115,7 +117,7 @@
 			    <div class="media-body">
 			      <h4 class="media-heading">식당3</h4>
 			      <p>별점3</p>
-			      <p>리뷰3</p>
+			      <p>리뷰제목3/작성자 아이디</p>
 			      <p>좋아요3</p>
 			    </div>
 			  </div>
