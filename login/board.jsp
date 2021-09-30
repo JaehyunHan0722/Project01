@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	</head>
+	<body>
+		<div>
+			<table>
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>제목</th>
+						<th>작성자</th>
+						<th>작성일</th>
+					</tr>
+				</thead>
+				<tbody> <!-- 예시 -->
+					<tr>
+						<td>1</td>
+						<td>게시판 테스트입니다.</td>
+						<td>장동건</td>
+						<td>2021-09-30</td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="#""><input type="button" value="글쓰기"></a>
+		</div>
+	</body>
+</html>
