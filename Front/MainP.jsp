@@ -10,7 +10,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<style type="text/css">
 			#outer1{
-				height: 100px;
+				height: 500px;
 			}
 			#outer2{
 				height: 500px
@@ -40,28 +40,9 @@
 		</style>
 	</head>
 	<body>
-		<div class="container">
+		<div id = "outer1" >
 		<jsp:include page="../template/navbar.jsp"></jsp:include>
-			<!-- <div id="outer1">
-				<button type="button" class="btn" id="mydiv1">사이트이름</button>
-				<button type="button" class="btn" id="mydiv3">로그인/회원가입</button>
-			</div> -->
-			
-			<div class="container">
-			  <h1 >무엇이 땡기세요??</h1>
-			  <form action="/action_page.php">
-			    <div class="input-group">
-			      <input type="text" class="form-control" placeholder="키워드 검색" name="search">
-			      <div class="input-group-btn">
-			        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-			      </div>
-			    </div>
-			  </form>
-			</div>
-			
-			
-			<div id="outer2">
-				<div id="menu">
+			<div id="menu">
 					<nav class="navbar bg-light" >
 					  <ul class="navbar-nav">
 					    <li class="nav-item">
@@ -84,6 +65,28 @@
 					  </ul>
 					</nav>
 				</div>
+		<div class="container">
+		
+			<!-- <div id="outer1">
+				<button type="button" class="btn" id="mydiv1">사이트이름</button>
+				<button type="button" class="btn" id="mydiv3">로그인/회원가입</button>
+			</div> -->
+			
+			<div class="container" >
+			  <h1 >무엇이 땡기세요??</h1>
+			  <form action="/action_page.php">
+			    <div class="input-group">
+			      <input type="text" class="form-control" placeholder="키워드 검색" name="search">
+			      <div class="input-group-btn">
+			        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+			      </div>
+			    </div>
+			  </form>
+			</div>
+			
+			
+			<div id="outer2">
+			
 				
 					<div class="container reviewbody">
 				  <h2>오늘의 리뷰</h2>
@@ -126,7 +129,7 @@
 				</div>
 			</div>
 		</div>
-		
+		</div>
 		
 		
 	</body>
