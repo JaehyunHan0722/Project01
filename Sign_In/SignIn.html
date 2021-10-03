@@ -9,17 +9,26 @@
 	</head>
 	<body>
 		<div id="signin">
-			<div>
-				<h3>아이디</h3>
-				<input type="text" placeholder="아이디를 입력">
-			</div>
-			<div>	
-				<h3>비밀번호</h3>
-				<input type="text" placeholder="비밀번호를 입력">
-			</div>
-			<div>
-				<h3>비밀번호 확인</h3>
-			</div>
+			<h2>회원가입 하기</h2>
+			<hr/>
+			<form method="post" action="/clientweb/proeject01/signin.do">
+				<div>
+					<h4>아이디</h4>
+					<input type="text" placeholder="아이디" name="id">
+				</div>
+				<div>	
+					<h4>비밀번호</h4>
+					<input type="text" placeholder="비밀번호" name="password">
+				</div>
+				<div>
+					<h4>이름</h4>
+					<input type="text" placeholder="이름" name="name">
+				</div>
+				<div>
+					<h4>전화번호</h4>
+					<input type="text" placeholder="전화번호" name="cellnum"> <input type="submit" value="회원가입">
+				</div>
+			</form>
 		</div>
 	</body>
 </html>
