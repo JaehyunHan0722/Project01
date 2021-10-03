@@ -1,13 +1,13 @@
 package project01;
 
-public class project_01DTO {
+public class userinfoDTO {
 	private String userid;
 	private String password;
 	private String name;
 	private String cellnum;
 	
 	//insert
-	public project_01DTO(String userid, String password, String name, String cellnum) {
+	public userinfoDTO(String userid, String password, String name, String cellnum) {
 		super();
 		this.userid = userid;
 		this.password = password;

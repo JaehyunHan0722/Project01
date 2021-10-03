@@ -4,10 +4,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-public class project_01DAO {
-	public void insert(project_01DTO user) {
+public class userinfoDAO {
+	public void insert(userinfoDTO user) {
 		String sql = "insert into userinfo values(?,?,?,?)";
-		Connection con = null;
+		Connection con = null; 
 		PreparedStatement stmt = null;
 		try {
 			con = DBUtil.getConnect();

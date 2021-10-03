@@ -20,12 +20,10 @@ public class SignInServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String cellnum = request.getParameter("cellnum");
 		
-		project_01DTO user = new project_01DTO(id, password, name, cellnum);
-		project_01DAO dao = new project_01DAO();
+		userinfoDTO user = new userinfoDTO(id, password, name, cellnum);
+		userinfoDAO dao = new userinfoDAO();
 		dao.insert(user);
-		System.out.println("가입 완료");
-		
-		
+		System.out.println("가입 완료");		
 	}
 
 }
