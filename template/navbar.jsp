@@ -19,7 +19,7 @@
 		    </div>
 		    <ul class="nav navbar-nav">
 		      <li class="active"><a href="#">홈으로</a></li>
-		      <li><a href="#">리뷰쓰기</a></li>
+		      <li><a href="../Review/review_form.html">리뷰쓰기</a></li>
 		      <li><a href="#">Page 2</a></li>
 		      <li><a href="#">Page 3</a></li>
 		      <li><a href="#">로그인/회원정보</a></li>
