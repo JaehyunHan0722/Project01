@@ -37,6 +37,7 @@
 	<body>
 		<div id = "outer1" >
 			<jsp:include page="../template/navbar.jsp"></jsp:include>
+			<jsp:include page="../template/sidebar.jsp"></jsp:include>
 			 <div class="container">
 	        <h2>식당이름</h2>
 	        

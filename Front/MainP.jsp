@@ -8,63 +8,12 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<style type="text/css">
-			#outer1{
-				height: 500px;
-			}
-			#outer2{
-				height: 500px
-			}
-			#mydiv1{
-				width: 15%;
-				float: left;
-			}
-			#mydiv2{
-				width: 250px;
-				float: left;
-			}
-			#mydiv3{
-				width: 15%;
-				float: right;
-			}
-			.reviewbody{
-				margin-top: 50px;
-				float: left;
-			}
-			#menu {
-				width: 15%;
-				margin-right: 50px;
-				float: left;
-				
-			}
-		</style>
+		
 	</head>
 	<body>
 		<div id = "outer1" >
 		<jsp:include page="../template/navbar.jsp"></jsp:include>
-			<div id="menu">
-					<nav class="navbar bg-light" >
-					  <ul class="navbar-nav">
-					    <li class="nav-item">
-					      <a class="nav-link" href="#">지역별 검색</a>
-					    </li>
-					  </ul>
-					</nav>
-					<nav class="navbar bg-light" >
-					  <ul class="navbar-nav">
-					    <li class="nav-item">
-					      <a class="nav-link" href="#">메뉴별 검색</a>
-					    </li>
-					  </ul>
-					</nav>
-					<nav class="navbar bg-light" >
-					  <ul class="navbar-nav">
-					    <li class="nav-item">
-					      <a class="nav-link" href="#">위치로 찾기</a>
-					    </li>
-					  </ul>
-					</nav>
-				</div>
+		<jsp:include page="../template/sidebar.jsp"></jsp:include>
 		<div class="container">
 		
 			<!-- <div id="outer1">
