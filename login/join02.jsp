@@ -141,7 +141,7 @@ https://templatemo.com/tm-559-zay-shop
                	 </div>     
                     <!-- <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search123 ..."> -->
                     <button type="submit" class="input-group-text bg-success text-light">
-                        <i class="fa fa-fw fa-search text-white">ㅎㅇㅎㅇ</i>
+                        <i class="fa fa-fw fa-search text-white">ㅎㅇ~~</i>
                     </button>
                    
                 </div>
