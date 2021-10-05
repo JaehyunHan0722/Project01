@@ -36,36 +36,52 @@ https://templatemo.com/tm-559-zay-shop
     <!-- Start Content Page -->
     <div class="container-fluid bg-light py-5">
         <div class="col-md-6 m-auto text-center">
-            <h1 class="h1">Contact Us</h1>
+            <h1 class="h1">리뷰 작성을 해보아요</h1>
             <p>
-                Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem ipsum dolor sit amet.
+               1. 먼저 식당을 검색해서 선택해주시고 현재 위치를 확인해주세요.
+            </p>
+            <p>2. 
+               위치 저장이 가능해지면 위치 저장 버튼을 활성화 시키고
+               위치 저장 버튼이 눌리면 타이머 on (sample 예제 참고)
+            </p>
+            <p>3. 
+               타이머가 끝나기 전까지 리뷰 작성 버튼 활성화
+            </p>
+            <p>4. 
+               리뷰 작성 버튼을 누르면 선택한 식당 정보를 넘기고 리뷰 작성 페이지로 이동.
             </p>
         </div>
     </div>
 
     <!-- Start Map -->
-    <div id="mapid" style="width: 100%; height: 300px;"></div>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <script>
-        var mymap = L.map('mapid').setView([-23.013104, -43.394365, 13], 13);
-
-        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-            maxZoom: 18,
-            attribution: 'Zay Telmplte | Template Design by <a href="https://templatemo.com/">Templatemo</a> | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            id: 'mapbox/streets-v11',
-            tileSize: 512,
-            zoomOffset: -1
-        }).addTo(mymap);
-
-        L.marker([-23.013104, -43.394365, 13]).addTo(mymap)
-            .bindPopup("<b>Zay</b> eCommerce Template<br />Location.").openPopup();
-
-        mymap.scrollWheelZoom.disable();
-        mymap.touchZoom.disable();
-    </script>
+    <div id="map" style="width:100%;height:400px;"></div>
+	<script type="text/javascript" 
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6b777dfc5bd00124977083ca84a84785"></script>
+	<script>
+		var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		    mapOption = { 
+		        center: new kakao.maps.LatLng(37.50147701179454, 127.03967042748602), // 지도의 중심좌표
+		        level: 3 // 지도의 확대 레벨
+		    };
+		
+		var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+		
+		// 마커가 표시될 위치입니다 
+		var markerPosition  = new kakao.maps.LatLng(37.50147701179454, 127.03967042748602); 
+		
+		// 마커를 생성합니다
+		var marker = new kakao.maps.Marker({
+		    position: markerPosition
+		});
+		
+		// 마커가 지도 위에 표시되도록 설정합니다
+		marker.setMap(map);
+		
+		// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+		// marker.setMap(null);    
+	</script>
+	
+    
     <!-- Ena Map -->
 
     <!-- Start Contact -->
@@ -74,8 +90,8 @@ https://templatemo.com/tm-559-zay-shop
             <form class="col-md-9 m-auto" method="post" role="form">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
-                        <label for="inputname">Name</label>
-                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Name">
+                        <label for="inputname">id</label>
+                        <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Id">
                     </div>
                     <div class="form-group col-md-6 mb-3">
                         <label for="inputemail">Email</label>
@@ -83,11 +99,11 @@ https://templatemo.com/tm-559-zay-shop
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="inputsubject">Subject</label>
+                    <label for="inputsubject">한줄평</label>
                     <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Subject">
                 </div>
                 <div class="mb-3">
-                    <label for="inputmessage">Message</label>
+                    <label for="inputmessage">리뷰내용</label>
                     <textarea class="form-control mt-1" id="message" name="message" placeholder="Message" rows="8"></textarea>
                 </div>
                 <div class="row">

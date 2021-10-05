@@ -49,10 +49,10 @@
                             <a class="nav-link" href="about.jsp">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">리뷰</a>
+                            <a class="nav-link" href="shop.jsp">리뷰 모음</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.jsp">Contact</a>
+                            <a class="nav-link" href="contact.jsp">리뷰 작성</a>
                         </li>
                     </ul>
                 </div>
