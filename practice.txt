@@ -1,3 +1,4 @@
-This is sample for Git 
-1234
-hoo
+2021-10-05 23:52
+
+login 파일에 있는 join01.jsp, join02.jsp 이거 두개 실행이 꺠져서 되는데
+templatemo에 넣어서 하면 실행됩니다.
