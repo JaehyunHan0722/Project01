@@ -51,12 +51,12 @@
     <!-- Start Map -->
     <div class="map_wrap">
     <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
-
+	
     <div id="menu_wrap" class="bg_white">
         <div class="option">
             <div>
                 <form onsubmit="searchPlaces(); return false;">
-                    키워드 : <input type="text" value="이태원 맛집" id="keyword" size="15"> 
+                    키워드 : <input type="text" placeholder="식당 검색" value="" id="keyword" size="15"> 
                     <button type="submit">검색하기</button> 
                 </form>
             </div>
@@ -95,10 +95,10 @@
 	
 	    var keyword = document.getElementById('keyword').value;
 	
-	    if (!keyword.replace(/^\s+|\s+$/g, '')) {
+	    /* if (!keyword.replace(/^\s+|\s+$/g, '')) {
 	        alert('키워드를 입력해주세요!');
 	        return false;
-	    }
+	    } */
 	
 	    // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
 	    ps.keywordSearch( keyword, placesSearchCB); 
@@ -197,17 +197,27 @@
 	    if (places.road_address_name) {
 	        itemStr += '    <span>' + places.road_address_name + '</span>' +
 	                    '   <span class="jibun gray">' +  places.address_name  + '</span>';
+	    
+	        
+	    
 	    } else {
 	        itemStr += '    <span>' +  places.address_name  + '</span>'; 
 	    }
 	                 
 	      itemStr += '  <span class="tel">' + places.phone  + '</span>' +
 	                '</div>';           
-	
+		
+		
 	    el.innerHTML = itemStr;
 	    el.className = 'item';
 	
 	    return el;
+	    
+	    /* var juso = place.road_address_name; */
+	    var juso = 'teahhhhhhh';
+		var result = document.getElementById('clickLatlng');
+		
+		result.innerTEXT = juso;
 	}
 	
 	// 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
@@ -286,7 +296,7 @@
 	    }
 	}
 	</script>
-	
+	<div id="clickLatlng"></div>
     
     <!-- End Map -->
 
