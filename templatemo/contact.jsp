@@ -217,7 +217,7 @@
 	    var juso = 'teahhhhhhh';
 		var result = document.getElementById('clickLatlng');
 		
-		result.innerTEXT = juso;
+		result.innerHTML = juso;
 	}
 	
 	// 마커를 생성하고 지도 위에 마커를 표시하는 함수입니다
